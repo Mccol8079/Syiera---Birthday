@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Nur Asyiera 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 10px auto;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 20px;
+      background: white;
+      color: #ff6b81;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .heart {
+      font-size: 30px;
+      animation: float 2s infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Happy Birthday, Nur Asyiera 🎂</h1>
+    <p>From your love, Mccol 💖</p>
+
+    <button onclick="showMessage()">Click me 🎁</button>
+
+    <div id="message" class="hidden">
+      <p>
+        Happy Birthday, my love 🥺<br><br>
+        Out of everyone in the world, I’m the luckiest to have you.<br>
+        You make my life so much happier just by being in it.<br><br>
+
+        I love your smile, your laugh, even your little moods 😆<br>
+        And no matter what, you are always beautiful to me.<br><br>
+
+        If I could choose again, I’d still choose you. Every time ❤️
+      </p>
+
+      <div class="heart">❤️ ❤️ ❤️</div>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>

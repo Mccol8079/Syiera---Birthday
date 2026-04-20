@@ -1,88 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Happy Birthday Nur Asyiera 💖</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
-      color: white;
-      text-align: center;
-    }
-
-    .container {
-      padding: 50px 20px;
-    }
-
-    h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 10px auto;
-      line-height: 1.6;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 20px;
-      background: white;
-      color: #ff6b81;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    .heart {
-      font-size: 30px;
-      animation: float 2s infinite;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0); }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <h1>Happy Birthday, Nur Asyiera 🎂</h1>
-    <p>From your love, Mccol 💖</p>
-
-    <button onclick="showMessage()">Click me 🎁</button>
-
-    <div id="message" class="hidden">
-      <p>
-        Happy Birthday, my love 🥺<br><br>
-        Out of everyone in the world, I’m the luckiest to have you.<br>
-        You make my life so much happier just by being in it.<br><br>
-
-        I love your smile, your laugh, even your little moods 😆<br>
-        And no matter what, you are always beautiful to me.<br><br>
-
-        If I could choose again, I’d still choose you. Every time ❤️
-      </p>
-
-      <div class="heart">❤️ ❤️ ❤️</div>
-    </div>
-  </div>
-
-  <script>
-    function showMessage() {
-      document.getElementById("message").classList.remove("hidden");
-    }
-  </script>
-</body>
-</html>
+‎<!DOCTYPE html><html lang="en">
+‎<head>
+‎<meta charset="UTF-8">
+‎<title>Happy Birthday Nur Asyiera ❤️</title><style>
+‎  body {
+‎    margin: 0;
+‎    font-family: 'Arial', sans-serif;
+‎    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+‎    color: white;
+‎    text-align: center;
+‎    overflow-x: hidden;
+‎  }
+‎
+‎  .container {
+‎    padding: 50px 20px;
+‎  }
+‎
+‎  h1 {
+‎    font-size: 32px;
+‎  }
+‎
+‎  p {
+‎    font-size: 18px;
+‎  }
+‎
+‎  button {
+‎    padding: 15px 25px;
+‎    font-size: 18px;
+‎    border: none;
+‎    border-radius: 20px;
+‎    background: white;
+‎    color: #ff6b81;
+‎    cursor: pointer;
+‎    margin-top: 20px;
+‎  }
+‎
+‎  img {
+‎    width: 220px;
+‎    border-radius: 20px;
+‎    margin: 10px;
+‎    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+‎  }
+‎
+‎  .hidden {
+‎    display: none;
+‎    margin-top: 20px;
+‎  }
+‎
+‎  .heart {
+‎    position: fixed;
+‎    top: -10px;
+‎    color: pink;
+‎    animation: fall 5s linear infinite;
+‎  }
+‎
+‎  @keyframes fall {
+‎    to {
+‎      transform: translateY(100vh);
+‎    }
+‎  }
+‎</style></head><body><div class="container">
+‎  <h1>🎂 Happy Birthday Nur Asyiera ❤️</h1>  <p id="text">From someone who loves you a lot... 💌</p><button onclick="showSurprise()">Open Your Surprise 🎁</button>
+‎
+‎  <div id="surprise" class="hidden">
+‎    <p>Hi sayang 💖</p>
+‎    <p>Thank you for being in my life.</p>
+‎    <p>You make everything feel lighter, happier, and more meaningful.</p>
+‎    <p>I hope your day is full of love, laughter, and all the things you deserve ✨</p>
+‎    <p>Stay cute, stay strong, and stay mine hehe 😚</p>
+‎    <p><b>– Love, Mccol ❤️</b></p><!-- REPLACE THESE WITH YOUR PHOTOS -->
+‎<img src="photo1.jpg">
+‎<img src="photo2.jpg">
+‎
+‎  </div>
+‎</div><script>
+‎function showSurprise() {
+‎  document.getElementById("surprise").style.display = "block";
+‎  document.getElementById("text").innerText = "For you, Nur Asyiera 💖";
+‎}
+‎
+‎// floating hearts
+‎setInterval(() => {
+‎  const heart = document.createElement("div");
+‎  heart.classList.add("heart");
+‎  heart.innerText = "💖";
+‎  heart.style.left = Math.random() * 100 + "vw";
+‎  heart.style.fontSize = Math.random() * 20 + 15 + "px";
+‎  document.body.appendChild(heart);
+‎
+‎  setTimeout(() => {
+‎    heart.remove();
+‎  }, 5000);
+‎}, 300);
+‎</script></body>
+‎</html>
